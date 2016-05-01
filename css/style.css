@@ -28,6 +28,13 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@font-face{
+  font-family: 'moon';
+   src: url(moon_light.otf);
+   src: url(moon_bold.otf);
+}
+
 .twelve.columns img{
   float: left;
   margin-left: 10px;
