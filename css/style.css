@@ -65,7 +65,8 @@ button a:hover{
   background-color: pink;
 }
 
-a.menu-link {
+/*this is for mobile naviagtion from this site http://codepen.io/bradfrost/pen/sHvaz*/
+/*a.menu-link {
         float: right;
         display: block;
         padding: 1em;
@@ -115,7 +116,7 @@ a.menu-link {
       nav[role=navigation] li a {
         border: 0;
       }
-    }
+    }*/
 
 
 
@@ -145,7 +146,7 @@ a {
   text-decoration: none;
  }  /* use to be #1EAEDB*/
 a:hover {
-  color: #657383; /*what I changed this colour too #657383*/
+  color: #5fe3d4; /*what I changed this colour too #657383*/
   text-decoration: line-through;
 }  /*use to be #0FA0CE*/
 
@@ -186,7 +187,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
-  border-color: #657383; /*if I really can't change it then in the end I'll come back and change this colour which is the border OKAY I am temp changing this it use to be #888*/
+  border-color: #5fe3d4; /* use to be #657383 if I really can't change it then in the end I'll come back and change this colour which is the border OKAY I am temp changing this it use to be #888*/
   outline: 0; }
 .button.button-primary,
 button.button-primary,
