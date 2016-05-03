@@ -1,33 +1,3 @@
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
-
-
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
-*/
-
-
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @font-face{
   font-family: 'moon';
@@ -86,6 +56,7 @@ h6 {
   font-weight: 400;
   font-style: normal;
   line-height: 30px;
+  /*width: 100%;*/
 }
 
 button a:hover{
@@ -94,6 +65,57 @@ button a:hover{
   background-color: pink;
 }
 
+a.menu-link {
+        float: right;
+        display: block;
+        padding: 1em;
+    }
+    nav[role=navigation] {
+      clear: both;
+      -webkit-transition: all 0.3s ease-out;  
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+    .js nav[role=navigation] {
+      overflow: hidden;
+      max-height: 0;
+    }
+    nav[role=navigation].active {
+      max-height: 15em;
+    }
+    nav[role=navigation] ul {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid #808080;
+    }
+    nav[role=navigation] li a {
+      display: block;
+      padding: 0.8em;
+      border-bottom: 1px solid #808080;
+    }
+    
+    @media screen and (min-width: 48.25em) {
+      a.menu-link {
+         display: none;
+      }
+      .js nav[role=navigation] {
+        max-height: none;
+      }
+      nav[role=navigation] ul {
+        margin: 0 0 0 -0.25em;
+        border: 0;
+      }
+      
+      nav[role=navigation]  li {
+        display: inline-block;
+        margin: 0 0.25em;
+      }
+      nav[role=navigation] li a {
+        border: 0;
+      }
+    }
 
 
 
@@ -164,7 +186,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
-  border-color: #ebe7f2; /*if I really can't change it then in the end I'll come back and change this colour which is the border OKAY I am temp changing this it use to be #888*/
+  border-color: #657383; /*if I really can't change it then in the end I'll come back and change this colour which is the border OKAY I am temp changing this it use to be #888*/
   outline: 0; }
 .button.button-primary,
 button.button-primary,
@@ -232,7 +254,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #5fe3d4; /*use to be #33C3F0*/
   outline: 0; }
 label,
 legend {
@@ -253,97 +275,29 @@ label > .label-body {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
-  list-style: circle inside; }
-ol {
-  list-style: decimal inside; }
-ol, ul {
-  padding-left: 0;
-  margin-top: 0; }
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
-li {
-  margin-bottom: 1rem; }
 
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background: #F1F1F1;
-  border: 1px solid #E1E1E1;
-  border-radius: 4px; }
-pre > code {
-  display: block;
-  padding: 1rem 1.5rem;
-  white-space: pre; }
 
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-th,
-td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
-th:first-child,
-td:first-child {
-  padding-left: 0; }
-th:last-child,
-td:last-child {
-  padding-right: 0; }
+
 
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
-  margin-bottom: 1rem; }
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 1.5rem; }
-pre,
-blockquote,
-dl,
-figure,
-table,
-p,
-ul,
-ol,
-form {
-  margin-bottom: 2.5rem; }
+
 
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box; }
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box; }
-.u-pull-right {
-  float: right; }
-.u-pull-left {
-  float: left; }
 
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+
 
 
 /* Clearing
