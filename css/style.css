@@ -35,6 +35,19 @@
    src: url(moon_bold.otf);
 }
 
+@font-face{
+  font-family: 'CutiveMono';
+   src: url(CutiveMono-Regular.otf);
+}
+
+@font-face{
+  font-family: 'Raleway';
+   src: url(Raleway-Regular.otf);
+   src: url(Raleway-Light.otf);
+   src: url(Raleway-ExtraLight.otf);
+}
+
+
 .twelve.columns img{
   float: left;
   margin-left: 10px;
@@ -44,7 +57,7 @@
   text-align: center;
   display: inline-block;
   width:100px; /* fixed width */
-  font-family: 'moon';
+  font-family: 'Raleway-Light';
   color; white;
   text-decoration: none;
   float: right; 
@@ -56,7 +69,7 @@
 
 h4 {
   text-align: center;
-  font-family: 'moon';
+  font-family: 'CutiveMono-Regular';
 }
 
 h5 {
@@ -66,10 +79,18 @@ h5 {
 h6 {
   text-align: center;
   padding: 0px 30px;
+  margin: 5px 5px 25px 5px;
+  text-transform: inherit;
+  font-size: 15px;
+  font-family: "CutiveMono-Regular";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
 }
 
 button{
   text-align: center;
+  font-family: 'CutiveMono-Regular';
 }
 
 @media all and (min-width: 600px) {
