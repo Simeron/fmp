@@ -88,10 +88,12 @@ h6 {
   line-height: 30px;
 }
 
-button{
+button a:hover{
   text-align: center;
   font-family: 'CutiveMono-Regular';
+  background-color: pink;
 }
+
 
 @media all and (min-width: 600px) {
   section.module h2 {
@@ -233,7 +235,7 @@ a {
   text-decoration: none;
  }  /* use to be #1EAEDB*/
 a:hover {
-  color: #657383; 
+  color: #657383; /*what I changed this colour too #657383*/
   text-decoration: line-through;
 }  /*use to be #0FA0CE*/
 
@@ -274,7 +276,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
-  border-color: #888;
+  border-color: #ebe7f2; /*if I really can't change it then in the end I'll come back and change this colour which is the border OKAY I am temp changing this it use to be #888*/
   outline: 0; }
 .button.button-primary,
 button.button-primary,
