@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <!--  then import your own CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row">
+      <div class="twelve columns">
+        <img id="logo" src="images/retouch-reviews-logo-final.png" width="221">
+        <nav>
+          <ul>
+            <li><a href="#">SEARCH</a></li>
+            <li><a href="#">PROFILE</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">HOME</a></li>
+          </ul>
+        </nav>
+      </div>
+  </div>
+
+ <!--  this is the wesbite I got the responsive nav bar from http://codepen.io/bradfrost/pen/sHvaz
+ <div id="pattern" class="pattern">
+    Begin Pattern HTML
+    <a href="#menu" class="menu-link">Menu</a>
+    <nav id="menu" role="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div> -->
+
+  <div class="container">
+
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 15%"> <!-- use to be 25% -->
+        <form action="demo_form.asp">
+        <h6><input type="text" name="fname" Placeholder="Search for a beauty product"></h6>
+      </div>
+    </div>  <!-- <button type="button" onclick="alert('Hello world!')">Click Me!</button> This is where I got the button code from http://www.w3schools.com/tags/tag_button.asp -->
+
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 5%"> <!-- use to be 25% -->
+        <h6><button type="button" onclick="alert('get inspired')">Review a beauty product</h6>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 5%"> <!-- use to be 25% -->
+        <h6><button type="button" onclick="alert('get inspired')">Get inspired</h6>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+     <!-- <form action="demo_form.asp">
+  <input type="text" name="fname" placeholder="First name"><br>
+  <input type="text" name="lname" placeholder="Last name"><br>
+  <input type="submit" value="Submit">
+    </form> 
+    I got the above code from the following site, and this is for placeholder text http://www.w3schools.com/tags/att_input_placeholder.asp-->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+<script>
+$(document).ready(function(){
+var header = $('body');
+
+var backgrounds = new Array(
+    'url(https://s-media-cache-ak0.pinimg.com/736x/e5/ed/d3/e5edd378dcd84220c2d97a693bd820c5.jpg)'
+  , 'url(https://s-media-cache-ak0.pinimg.com/236x/ac/2b/db/ac2bdbf00ce888f3082ad4e2666b002c.jpg)'
+  , 'url(http://www.wallpapername.com/thumbnails/detail/20121101/eyes%20multicolor%20rainbows%20eye%20makeup%201600x1200%20wallpaper_www.wallpapername.com_63.jpg)'
+  , 'url(http://www.ccdbeautypr.com/wp-content/uploads/2011/11/beauty_banner.jpg)'
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 5500);
+
+header.css('background-image', backgrounds[0]);
+});
+</script>
+
+</body>
+</html>
+
+ <!-- <div class="row">
+      <div class="twelve columns">Footer Simeron Taak made this website</div>
+  </div> -->
