@@ -84,6 +84,7 @@ p{
 }
 .twelve.columns p{
   text-align: left;
+  font-family: 'CutiveMono-Regular';
 }
 
 
@@ -134,12 +135,14 @@ label, input {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    font-family: 'CutiveMono-Regular';
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
     background-color: ghostwhite;
+    font-family: 'CutiveMono-Regular';
 }
 
 .dropdown-content {
@@ -165,7 +168,6 @@ label, input {
 
 .dropdown:hover .dropbtn {
     background-color: ghostwhite;
-    border: #5fe3d4;
 }
 
 
