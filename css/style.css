@@ -76,6 +76,11 @@ label, input {
     font-family: 'CutiveMono-Regular';
 }
 
+p{
+  font-family: 'CutiveMono-Regular';
+  text-align: center; 
+}
+
 /*this is for mobile naviagtion from this site http://codepen.io/bradfrost/pen/sHvaz*/
 /*a.menu-link {
         float: right;
