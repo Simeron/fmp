@@ -66,13 +66,14 @@ button a:hover{
 }
 
 form {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
 }
 
 label, input {
     display: inline-block;
+    font-family: 'CutiveMono-Regular';
 }
 
 /*this is for mobile naviagtion from this site http://codepen.io/bradfrost/pen/sHvaz*/
