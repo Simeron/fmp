@@ -75,37 +75,39 @@
     
     <div class="row">
       <div class="twelve columns" style="margin-top: 5%"> <!-- use to be 25% -->
-        <form>
-          <label>*First name:</label>
-          <input type="text" name="firstname">
-          <br>
+        <!-- <form> -->
+          <p>Hi there! Are you making a complement or a complaint?</p>
+          <input type="submit" value="Complement"> 
+          <input type="submit" value="complaint"> 
+        <!-- </form> -->
+      </div>
+    </div> 
 
-          <label>*Last name:</label>
-          <input type="text" name="lastname">
-          <br>
+    <div class="row">
+      <div class="twelve columns">
+        <span class="star-rating">
+          <p>£ Did you find you got value for money from this product?</p>
+          <input type="radio" name="rating" value="1"><i></i>
+          <input type="radio" name="rating" value="2"><i></i>
+          <input type="radio" name="rating" value="3"><i></i>
+          <input type="radio" name="rating" value="4"><i></i>
+          <input type="radio" name="rating" value="5"><i></i>
+        </span>
+        <strong class="choice">Choose a rating</strong>
+      </div> 
+    </div>
 
-          <label>*Email:</label>
-          <input type="text" name="email">
-          <br>
-
-          <label>*Username:</label>
-          <input type="text" name="Username">
-          <br>
-
-          <label>*Date of Birth:</label>
-          <input type="text" name="Date of Birth">
-          <br>
-
-          <label>Skin Type:</label>
-          <input type="text" name="Skin Type">
-          <br>
-
-          <label>Undertones:</label>
-          <input type="text" name="Undertones">
-          <br>
-
-          <input type="submit" value="Submit"> 
-        </form>
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 5%"> <!-- use to be 25% -->
+        <p>How long did the product last for?</p>
+         <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+  </div>
+</div>
       </div>
     </div> 
 
@@ -131,6 +133,7 @@
 
 
  <script>
+ $(':radio').change(  function(){    $('.choice').text( this.value + ' stars' );  } )
 // $(document).ready(function(){
 // var header = $('body');
 
