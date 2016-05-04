@@ -52,6 +52,10 @@ h5 {
   background-color: #ebf4f3;
 }
 
+.one-half.column h5{
+  background-color: transparent;
+}
+
 h6 {
   text-align: center;
   padding: 0px 30px;
@@ -69,6 +73,18 @@ p{
   font-family: 'CutiveMono-Regular';
   text-align: center; 
 }
+
+.one-half.column.profile p{
+  text-align: left;
+  margin-top: inherit;
+}
+
+.one-half.column.text p{
+  text-align: left;
+}
+
+
+
 
 button a:hover{
   text-align: center;
@@ -96,14 +112,6 @@ label, input {
   float: right;
 }
 
-.one-half.column.profile p{
-  text-align: left;
-  margin-top: inherit;
-}
-
-.one-half.column h5{
-  background-color: transparent;
-}
 
 /*this is for mobile naviagtion from this site http://codepen.io/bradfrost/pen/sHvaz*/
 /*a.menu-link {
