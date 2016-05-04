@@ -33,6 +33,11 @@
   float: right; 
 }
 
+
+.one-half.column{
+  background-color: pink;
+}
+
 .img nav ul li{
   position: fixed; /*(but I do end up losing the footer)*/
 }  
@@ -60,6 +65,11 @@ h6 {
   /*width: 100%;*/
 }
 
+p{
+  font-family: 'CutiveMono-Regular';
+  text-align: center; 
+}
+
 button a:hover{
   text-align: center;
   font-family: 'CutiveMono-Regular';
@@ -77,10 +87,10 @@ label, input {
     font-family: 'CutiveMono-Regular';
 }
 
-p{
-  font-family: 'CutiveMono-Regular';
-  text-align: center; 
+.one-half.column img{
+  width: 100%;
 }
+
 
 /*this is for mobile naviagtion from this site http://codepen.io/bradfrost/pen/sHvaz*/
 /*a.menu-link {
