@@ -121,6 +121,11 @@ label, input {
   margin-left: 15%;
 }
 
+.one-half.column.writereview img{
+  float: right;
+  width: 50%;
+}
+
 @media (max-width: 750px){
   .one-half.column.image img{
     width: 100%;
