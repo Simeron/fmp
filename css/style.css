@@ -65,6 +65,16 @@ button a:hover{
   background-color: pink;
 }
 
+form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    display: inline-block;
+}
+
 /*this is for mobile naviagtion from this site http://codepen.io/bradfrost/pen/sHvaz*/
 /*a.menu-link {
         float: right;
