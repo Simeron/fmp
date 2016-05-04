@@ -91,6 +91,19 @@ label, input {
   width: 100%;
 }
 
+.one-half.column.profile img{
+  width: 50%;
+  float: right;
+}
+
+.one-half.column.profile p{
+  text-align: left;
+  margin-top: inherit;
+}
+
+.one-half.column h5{
+  background-color: transparent;
+}
 
 /*this is for mobile naviagtion from this site http://codepen.io/bradfrost/pen/sHvaz*/
 /*a.menu-link {
