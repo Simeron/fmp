@@ -71,7 +71,7 @@ form {
     text-align: center;
 }
 
-input {
+label, input {
     display: inline-block;
 }
 
