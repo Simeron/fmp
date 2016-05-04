@@ -112,6 +112,17 @@ label, input {
   float: right;
 }
 
+.one-half.column.image img{
+  width: 50%;
+  margin-left: 15%;
+}
+
+@media (max-width: 750px){
+  .one-half.column.image img{
+    width: 100%;
+  }
+
+}
 
 /*this is for mobile naviagtion from this site http://codepen.io/bradfrost/pen/sHvaz*/
 /*a.menu-link {
