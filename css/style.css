@@ -336,13 +336,16 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  /*height: 38px;*/
+  padding: 1em; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: ghostwhite; /*use to be fff*/
   border: 1px solid #bbb; /*use to be D1D1D1*/
   border-radius: 4px;
   box-shadow: none;
-  box-sizing: border-box; }
+  font-size: 200%;
+  width: 100%;
+  box-sizing: border-box; 
+}
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],

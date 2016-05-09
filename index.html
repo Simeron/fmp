@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <!--  then import your own CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bg-crossfade.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -104,26 +105,60 @@
 
 
 <script>
-$(document).ready(function(){
-var header = $('body');
+$(document).ready(function()
+{
 
-var backgrounds = new Array(
-    'url(https://s-media-cache-ak0.pinimg.com/736x/e5/ed/d3/e5edd378dcd84220c2d97a693bd820c5.jpg)'
-  , 'url(https://s-media-cache-ak0.pinimg.com/236x/ac/2b/db/ac2bdbf00ce888f3082ad4e2666b002c.jpg)'
-  , 'url(http://www.wallpapername.com/thumbnails/detail/20121101/eyes%20multicolor%20rainbows%20eye%20makeup%201600x1200%20wallpaper_www.wallpapername.com_63.jpg)'
-  , 'url(http://www.ccdbeautypr.com/wp-content/uploads/2011/11/beauty_banner.jpg)'
-);
+  var bgImageArray = ["lonely.jpg", "uluwatu.jpg", "carezza-lake.jpg", "batu-bolong-temple.jpg"],
+  base = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/full-",
+  secs = 4;
+  bgImageArray.forEach(function(img)
+  {
+      new Image().src = base + img; 
+      // caches images, avoiding white flash between background replacements
+  });
 
-var current = 0;
+  function backgroundSequence() {
+    window.clearTimeout();
+    var k = 0;
+    for (i = 0; i < bgImageArray.length; i++) 
+    {
+      setTimeout(function()
+      { 
+        document.documentElement.style.background = "url(" + base + bgImageArray[k] + ")";        
+        if ((k + 1) === bgImageArray.length) 
+        { 
+          setTimeout(function() { backgroundSequence() }, (secs * 1000))
+        } 
+        else  k++;      
+      }, (secs * 1000) * i) 
+    }
+  }
+  backgroundSequence();
 
-function nextBackground() {
-    current++;
-    current = current % backgrounds.length;
-    header.css('background-image', backgrounds[current]);
-}
-setInterval(nextBackground, 5500);
+  /*var body = $('body');
 
-header.css('background-image', backgrounds[0]);
+  var backgrounds = new Array(
+      'url(https://s-media-cache-ak0.pinimg.com/736x/e5/ed/d3/e5edd378dcd84220c2d97a693bd820c5.jpg)'
+    , 'url(https://s-media-cache-ak0.pinimg.com/236x/ac/2b/db/ac2bdbf00ce888f3082ad4e2666b002c.jpg)'
+    , 'url(http://www.wallpapername.com/thumbnails/detail/20121101/eyes%20multicolor%20rainbows%20eye%20makeup%201600x1200%20wallpaper_www.wallpapername.com_63.jpg)'
+    , 'url(http://www.ccdbeautypr.com/wp-content/uploads/2011/11/beauty_banner.jpg)'
+  );
+
+  var current = 0;
+
+  function nextBackground() 
+  {
+      current++;
+      current = current % backgrounds.length;
+      body.css('background-image', backgrounds[current]);
+  }
+  setInterval(nextBackground, 5500);
+
+  body.css('background-image', backgrounds[0]);
+*/
+
+
+
 });
 </script>
 
