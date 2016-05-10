@@ -11,7 +11,9 @@
 
 	<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" />
 
-	<!-- have midded out a line of code i believe it was for the comments section -->
+	<!-- have midded out a line of code i believe it was for the comments section below is the comment section which I spoke about taking it out, but for the purpose of this template I want to keep it all the same just in case-->
+
+	<?php if ( is_singular () ) wp_enqueue_script ( 'comment-reply'); ?>
 
 	<?php wp_head(); ?>
 </head>
