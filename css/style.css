@@ -1,3 +1,13 @@
+/*
+Theme Name: Retouch Reviews
+Theme URI: http://www.blog.spoongraphics.co.uk
+Description: Retouch Reviews WordPress theme
+Version: 1
+Author: Simeron Taak
+Author URI: http://www.spoongraphics.co.uk
+*/
+
+
 
 @font-face{
   font-family: 'moon';
@@ -35,8 +45,8 @@
 
 
 .one-half.column{
-  background-color: pink;
-}
+  /*background-color: pink;
+*/}
 
 .img nav ul li{
   position: fixed; /*(but I do end up losing the footer)*/
@@ -131,6 +141,12 @@ label, input {
     width: 100%;
   }
 
+}
+
+@media (max-width: 750px){
+  .button button{
+    font-size: 80%; /*I don't think this is working, but I have left this in anyway, just so I have something to refer back to. */
+  }
 }
 
 .dropbtn {
@@ -277,7 +293,7 @@ input[type="button"] {
   padding: 0 30px;
   color: #555;
   text-align: center;
-  font-size: 100%; /*use to be 11px*/
+  font-size: 100%; /*use to be 11px for some reason it isn't responsive with percentages*/
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
