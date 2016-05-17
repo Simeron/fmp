@@ -1,0 +1,473 @@
+/*
+Theme Name: Simeron is excited
+Theme URI: https://wordpress.org/themes/twentysixteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, red, white, yellow, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentysixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+@font-face{
+  font-family: 'moon';
+   src: url(moon_light.otf);
+   src: url(moon_bold.otf);
+}
+
+@font-face{
+  font-family: 'CutiveMono';
+   src: url(CutiveMono-Regular.otf);
+}
+
+@font-face{
+  font-family: 'Raleway';
+   src: url(Raleway-Regular.otf);
+   src: url(Raleway-Light.otf);
+   src: url(Raleway-ExtraLight.otf);
+}
+
+
+.twelve.columns img{
+  float: left;
+  margin-left: 10px;
+}
+
+.twelve.columns nav ul li{
+  text-align: center;
+  display: inline-block;
+  width:100px; /* fixed width */
+  font-family: 'Raleway-Light';
+  background-color; ghostwhite;
+  text-decoration: none;
+  float: right; 
+}
+
+
+.one-half.column{
+  /*background-color: pink;
+*/}
+
+.img nav ul li{
+  position: fixed; /*(but I do end up losing the footer)*/
+}  
+
+h4 {
+  text-align: center;
+  font-family: 'CutiveMono-Regular';
+}
+
+h5 {
+  text-align: center;
+  background-color: #ebf4f3;
+}
+
+.one-half.column h5{
+  background-color: transparent;
+}
+
+h6 {
+  text-align: center;
+  padding: 0px 30px;
+  margin: 5px 5px 25px 5px;
+  text-transform: inherit;
+  font-size: 15px;
+  font-family: "CutiveMono-Regular";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  /*width: 100%;*/
+}
+
+p{
+  font-family: 'CutiveMono-Regular';
+  text-align: center; 
+}
+
+.one-half.column.profile p{
+  text-align: left;
+  margin-top: inherit;
+}
+
+.one-half.column.text p{
+  text-align: left;
+}
+.twelve.columns p{
+  text-align: left;
+  font-family: 'CutiveMono-Regular';
+}
+
+
+
+
+button a:hover{
+  text-align: center;
+  font-family: 'CutiveMono-Regular';
+  background-color: pink;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+label, input {
+    display: inline-block;
+    font-family: 'CutiveMono-Regular';
+}
+
+.one-half.column img{
+  width: 100%;
+}
+
+.one-half.column.profile img{
+  width: 50%;
+  float: right;
+}
+
+.one-half.column.image img{
+  width: 50%;
+  margin-left: 15%;
+}
+
+.one-half.column.writereview img{
+  float: right;
+  width: 50%;
+}
+
+@media (max-width: 750px){
+  .one-half.column.image img{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 750px){
+  .button button{
+    font-size: 80%; /*I don't think this is working, but I have left this in anyway, just so I have something to refer back to. */
+  }
+}
+
+.dropbtn {
+    background-color: ghostwhite; /*this colour use to be #4CAF50*/
+    color: #555;
+    padding: -1px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'CutiveMono-Regular';
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: ghostwhite;
+    font-family: 'CutiveMono-Regular';
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: ghostwhite;
+}
+
+
+
+
+/*this is for mobile naviagtion from this site http://codepen.io/bradfrost/pen/sHvaz*/
+/*a.menu-link {
+        float: right;
+        display: block;
+        padding: 1em;
+    }
+    nav[role=navigation] {
+      clear: both;
+      -webkit-transition: all 0.3s ease-out;  
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+    .js nav[role=navigation] {
+      overflow: hidden;
+      max-height: 0;
+    }
+    nav[role=navigation].active {
+      max-height: 15em;
+    }
+    nav[role=navigation] ul {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid #808080;
+    }
+    nav[role=navigation] li a {
+      display: block;
+      padding: 0.8em;
+      border-bottom: 1px solid #808080;
+    }
+    
+    @media screen and (min-width: 48.25em) {
+      a.menu-link {
+         display: none;
+      }
+      .js nav[role=navigation] {
+        max-height: none;
+      }
+      nav[role=navigation] ul {
+        margin: 0 0 0 -0.25em;
+        border: 0;
+      }
+      
+      nav[role=navigation]  li {
+        display: inline-block;
+        margin: 0 0.25em;
+      }
+      nav[role=navigation] li a {
+        border: 0;
+      }
+    }*/
+
+
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #000000;
+  text-decoration: none;
+ }  /* use to be #1EAEDB*/
+a:hover {
+  color: #5fe3d4; /*what I changed this colour too #657383*/
+  text-decoration: line-through;
+}  /*use to be #0FA0CE*/
+
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 100%; /*use to be 11px for some reason it isn't responsive with percentages*/
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: ghostwhite;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; 
+  width: 80%;
+}
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #5fe3d4; /* use to be #657383 if I really can't change it then in the end I'll come back and change this colour which is the border OKAY I am temp changing this it use to be #888*/
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  /*height: 38px;*/
+  padding: 0.2em; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: ghostwhite; /*use to be fff*/
+  border: 1px solid #bbb; /*use to be D1D1D1*/
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 200%;
+  width: 100%;
+  box-sizing: border-box; 
+}
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #5fe3d4; /*use to be #33C3F0*/
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
