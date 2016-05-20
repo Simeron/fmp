@@ -24,17 +24,17 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<div class="site-inner">
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
+		<!-- <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a> -->
 
 		<div class="row">
 	      <div class="twelve columns">
-	        <img id="logo" src="images/retouch-reviews-logo-final.png" width="221">
+	        <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/retouch-reviews-logo-final.png" width="221">
 	        <nav>
 	          <ul>
 	            <li><a href="#">SEARCH</a></li>
 	            <li><a href="sign-up.html">PROFILE</a></li>
-	            <li><a href="#">PRODUCT</a></li>
-	            <li><a href="#">HOME</a></li>
+	            <li><a href="<?php echo home_url(); ?>/product">PRODUCT</a></li>
+	            <li><a href="<?php echo home_url(); ?>">HOME</a></li>
 	          </ul>
 	        </nav>
 	      </div>
