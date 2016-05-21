@@ -14,7 +14,7 @@ get_header(); ?>
 
 <!-- 		go into the skeleton css and copy over any CSS in relation to the container tag, that might be why everything is so big and stretches to each side of the page.  -->
 		
- <div class="container">
+   <div class="container">
     <div class="row">
       <div class="twelve columns">
         <p>Explore the product category of your choice</p>
@@ -71,6 +71,16 @@ get_header(); ?>
         <img src="http://www1.macys.com/dyn_img/cat_splash/0203_MAC_main_banner_PrepPrime_1119835.jpg">
       </div>
     </div> 
+
+    <br>
+
+   <!--  <hr>
+
+    <h5>Write your first review!</h5> 
+
+    <hr> -->
+
+  </div> 
 
 	</main><!-- .site-main -->
 
