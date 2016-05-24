@@ -11,7 +11,8 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		
+
+	<div class="container">
 		<div class="row">
 	      <div class="twelve columns"> <!-- use to be 25% -->
 	        <form action="demo_form.asp">
@@ -30,6 +31,7 @@ get_header(); ?>
 	        <h6><button type="button" onclick="alert('get inspired')">Get inspired</h6>
 	      </div>
 	    </div>
+	</div>
 
 	</main><!-- .site-main -->
 

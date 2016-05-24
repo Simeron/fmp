@@ -74,12 +74,6 @@ get_header(); ?>
 
     <br>
 
-   <!--  <hr>
-
-    <h5>Write your first review!</h5> 
-
-    <hr> -->
-
   </div> 
 
 	</main><!-- .site-main -->
