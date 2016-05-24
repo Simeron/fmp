@@ -81,6 +81,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
   float: right; 
 }
 
+.two.columns img{
+  width: 100%;
+}
+
+.ten.columns.text p{
+  text-align: left;
+  float: left;
+}
+
+.ten.columns h6{
+  text-align: left;
+}
+
+p {
+  text-align: left;
+}
 
 .one-half.column{
   /*background-color: pink;
@@ -177,6 +193,7 @@ label, input {
 @media (max-width: 750px){
   .one-half.column.image img{
     width: 100%;
+    font-family: 'CutiveMono-Regular';
   }
 
 }
@@ -185,19 +202,12 @@ label, input {
   .button button{
     font-size: 80%; /*I don't think this is working, but I have left this in anyway, just so I have something to refer back to. */
   }
-
-  .one-half.column{
-    width: 100%;
-  }
-
-  .row{
-    width: 100%;
-  }
 }
 
 @media (max-width: 550px){
   .one-half.column{
     width: 100%;
+    font-family: 'CutiveMono-Regular';
   }
 }
 
