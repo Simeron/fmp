@@ -16,19 +16,27 @@ get_header(); ?>
 		
   <div class="container">
 
+    <?php while ( have_posts() ) : the_post(); ?>
+
     <div class="row">
       <div class="one-half column profile" style="margin-top: 5%"> <!-- use to be 25% -->
-       <img src="https://boots.scene7.com/is/image/Boots/10177346?id=ZzzaM2&fmt=jpg&fit=constrain,1&wid=504&hei=548">
+        <?php the_post_thumbnail( 'medium' ); ?>
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/no7-primer.jpeg"> -->
       </div>
 
       <div class="one-half column profile" style="margin-top: 5%"> <!-- use to be 25% -->
-        <h5>No.7 Air Brush Away Primer</h5>
-        <p>Primer - This is a product which can be used as a base for makeup. Or you can also wear it alone, to hide pores and leave you skins with a soft velvety finish. Perfect for all skin types, from dry to oily, and also doesn't block pores. This primer inparticular also has skin care properties, so will also help with fine lines, creases and wrinkes.</p>
-        <strong>30mls</strong>
+        <h5> <?php the_title(); ?> <!-- No.7 Air Brush Away Primer --> </h5>
+        <div><?php the_content(); ?></div>
+        <!-- <p>Primer - This is a product which can be used as a base for makeup. Or you can also wear it alone, to hide pores and leave you skins with a soft velvety finish. Perfect for all skin types, from dry to oily, and also doesn't block pores. This primer inparticular also has skin care properties, so will also help with fine lines, creases and wrinkes.</p> -->
+        
+        <strong><?php the_field('size'); ?> <!-- 30mls --></strong>
         <br>
-        <strong>£16.50 - £20.00</strong>
+        <strong><?php the_field('price_range'); ?> <!-- £16.50 - £20.00 --></strong>
+      
       </div>
     </div> 
+
+    <?php endwhile; ?>
 
     <hr>
 
@@ -49,7 +57,7 @@ get_header(); ?>
 
     <div class="row">
       <div class="two columns" style="margin-top: 5%"> <!-- use to be 25% -->
-        <img src="http://www.sephora.com/productimages/sku/s1343938-main-zoom.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/benefit-mascara-theyre-real.jpg">
     
       </div>
 
@@ -62,7 +70,7 @@ get_header(); ?>
 
     <div class="row">
       <div class="two columns" style="margin-top: 5%"> <!-- use to be 25% -->
-        <img src="http://www.sephora.com/productimages/sku/s1343938-main-zoom.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/benefit-mascara-theyre-real.jpg">
       </div>
 
       <div class="ten columns text" style="margin-top: 5%"> <!-- use to be 25% -->
@@ -72,12 +80,6 @@ get_header(); ?>
     </div> 
 
     <br>
-
-   <!--  <hr>
-
-    <h5>Write your first review!</h5> 
-
-    <hr> -->
 
   </div> 
 

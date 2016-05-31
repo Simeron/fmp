@@ -32,7 +32,17 @@
 	        <nav>
 	          <ul>
 	            <li><a href="#">SEARCH</a></li>
-	            <li><a href="sign-up.html">PROFILE</a></li>
+
+	           <?php if ( is_user_logged_in() ) : ?>
+
+	            <li><a href="<?php echo home_url(); ?>/profile">PROFILE</a></li>
+	          <?php else: ?>
+
+	            <li><a href="<?php echo home_url(); ?>/login">LOGIN</a></li>
+	            <li><a href="<?php echo home_url(); ?>/sign up">SIGN UP</a></li>
+
+	           <?php endif; ?>
+
 	            <li><a href="<?php echo home_url(); ?>/product">PRODUCT</a></li>
 	            <li><a href="<?php echo home_url(); ?>">HOME</a></li>
 	          </ul>
@@ -41,3 +51,4 @@
 	  </div>
 
 		<div id="content" class="site-content">
+

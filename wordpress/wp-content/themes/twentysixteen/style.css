@@ -98,6 +98,14 @@ p {
   text-align: left;
 }
 
+.five.columns img{
+  width: 100%;
+}
+
+.seven.columns img{
+  width: 100%;
+}
+
 .one-half.column{
   /*background-color: pink;
 */}
@@ -202,6 +210,20 @@ label, input {
   .button button{
     font-size: 80%; /*I don't think this is working, but I have left this in anyway, just so I have something to refer back to. */
   }
+
+  .five.columns {
+    width: 100%;
+  }
+  .five.columns img{
+    width: 100%;
+  }
+
+  .seven.columns{
+    width: 100%;
+  }
+  .seven.columns img{
+    width: 100%;
+  }
 }
 
 @media (max-width: 550px){
@@ -209,6 +231,16 @@ label, input {
     width: 100%;
     font-family: 'CutiveMono-Regular';
   }
+
+
+  .five.columns img{
+    width: 100%;
+  }
+
+  .seven.columns img{
+    width: 100%;
+  }
+
 }
 
 .dropbtn {
@@ -251,6 +283,28 @@ label, input {
 
 .dropdown:hover .dropbtn {
     background-color: ghostwhite;
+}
+
+/* FOOTER */
+
+body, html {
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    position: fixed;
+}
+
+/*Wp members css*/
+.div_text{
+  margin-left: 25%;
 }
 
 

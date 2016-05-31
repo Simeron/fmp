@@ -24,12 +24,12 @@ get_header(); ?>
     <div class="row">
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
         <p>prep and prime</p>
-        <img src="http://www1.macys.com/dyn_img/cat_splash/0203_MAC_main_banner_PrepPrime_1119835.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/MAC-main-banner-PrepPrime.jpg">
       </div>
 
        <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
         <p>Pimers</p>
-        <img src="http://www1.macys.com/dyn_img/cat_splash/0203_MAC_main_banner_PrepPrime_1119835.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/MAC-main-banner-PrepPrime.jpg">
       </div>
     </div> 
 
@@ -37,12 +37,12 @@ get_header(); ?>
     <div class="row">
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
         <p>Concealer</p>
-       <img src="http://www1.macys.com/dyn_img/cat_splash/0203_MAC_main_banner_PrepPrime_1119835.jpg">
+       <img src="<?php echo get_template_directory_uri(); ?>/images/MAC-main-banner-PrepPrime.jpg">
       </div>
 
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
         <p>Foundation</p>
-        <img src="http://www1.macys.com/dyn_img/cat_splash/0203_MAC_main_banner_PrepPrime_1119835.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/MAC-main-banner-PrepPrime.jpg">
       </div>
     </div> 
 
@@ -50,12 +50,12 @@ get_header(); ?>
     <div class="row">
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
         <p>Correctors</p>
-        <img src="http://www1.macys.com/dyn_img/cat_splash/0203_MAC_main_banner_PrepPrime_1119835.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/MAC-main-banner-PrepPrime.jpg">
       </div>
 
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
         <p>Lipstick</p>
-        <img src="http://www1.macys.com/dyn_img/cat_splash/0203_MAC_main_banner_PrepPrime_1119835.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/MAC-main-banner-PrepPrime.jpg">
       </div>
     </div> 
 
@@ -63,12 +63,12 @@ get_header(); ?>
     <div class="row">
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
         <p>Eyes</p>
-        <img src="http://www1.macys.com/dyn_img/cat_splash/0203_MAC_main_banner_PrepPrime_1119835.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/MAC-main-banner-PrepPrime.jpg">
       </div>
 
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
         <p>Mascara</p>
-        <img src="http://www1.macys.com/dyn_img/cat_splash/0203_MAC_main_banner_PrepPrime_1119835.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/MAC-main-banner-PrepPrime.jpg">
       </div>
     </div> 
 
