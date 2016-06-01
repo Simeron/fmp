@@ -56,48 +56,54 @@ get_header(); ?>
 
     <!-- create a WP Query that pulls in review posts that are related to this  -->
 
-    <div class="row">
-      <div class="two columns" style="margin-top: 5%"> <!-- use to be 25% -->
-        <img src="<?php echo get_template_directory_uri(); ?>/images/benefit-mascara-theyre-real.jpg">
+    <!-- <div class="row"> -->
+      <!-- <div class="two columns" style="margin-top: 5%"> <!-- use to be 25% -->
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/benefit-mascara-theyre-real.jpg"> -->
     
-      </div>
+      <!-- </div> -->
 
-      <div class="ten columns text" style="margin-top: 5%"> <!-- use to be 25% -->
-         <h6><strong>There real mascara</strong></h6>
+      <div class="twelve columns text" style="margin-top: 5%"> <!-- use to be 25% -->
+         <!-- <h6><strong>There real mascara</strong></h6> -->
         <!-- <p>I just wanted to write this review about this product, which is the Benefit they're real mascara. It has a really nice wand a and the mascara itself lasts a long time, it is also quite a stubborn to take off as well, when though it's not waterproof. </p> -->
-       <?php $the_query = new WP_Query( $args );
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        
+        <h6><?php the_title(); ?></h6>
+        <?php wp_list_cats('sort_column'); ?>
+    <?php the_post_thumbnail('thumbnail'); ?>
+    <?php the_excerpt(); ?>
+<?php endwhile; else: ?>
+    <?php _e( 'Sorry, no posts matched your criteria.', 'textdomain' ); ?>
+<?php endif; ?>
 
-        if ( $the_query->have_posts() ) {
-          echo '<ul>';
-        while ( $the_query->have_posts() ) {
-          $the_query->the_post();
-          echo '<li>' . get_the_title() . '</li>';
-          }
-           echo '</ul>';
-      } else {
-  // no posts found
-              }
-/* Restore original Post Data */
-        wp_reset_postdata(); ?>
-
-      </div>
-    </div> 
+  
 
 
-    <div class="row">
-      <div class="two columns" style="margin-top: 5%"> <!-- use to be 25% -->
-        <img src="<?php echo get_template_directory_uri(); ?>/images/benefit-mascara-theyre-real.jpg">
-      </div>
+    <!-- <div class="row"> -->
+      <!-- <div class="two columns" style="margin-top: 5%"> <!-- use to be 25% --> 
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/benefit-mascara-theyre-real.jpg"> -->
+      <!-- </div> -->
 
-      <div class="ten columns text" style="margin-top: 5%"> <!-- use to be 25% -->
-        <h6><strong>There real mascara</strong></h6>
-        <p>I just wanted to write this review about this product, which is the Benefit they're real mascara. It has a really nice wand a and the mascara itself lasts a long time, it is also quite a stubborn to take off as well, when though it's not waterproof. </p>
+      <div class="twelve columns text" style="margin-top: 5%"> <!-- use to be 25% -->
+        <!-- <h6><strong>There real mascara</strong></h6> -->
+        <!-- <p>I just wanted to write this review about this product, which is the Benefit they're real mascara. It has a really nice wand a and the mascara itself lasts a long time, it is also quite a stubborn to take off as well, when though it's not waterproof. </p> -->
+      
+       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+ 
+        <h6><?php the_title(); ?></h6>
+    <?php the_post_thumbnail('thumbnail'); ?>
+    <?php the_excerpt(); ?>
+<?php endwhile; else: ?>
+    <?php _e( 'Sorry, no posts matched your criteria.', 'textdomain' ); ?>
+<?php endif; ?> 
       </div>
     </div> 
 
     <br>
 
   </div> 
+
+ </div>
+</div> 
 
 	</main><!-- .site-main -->
 

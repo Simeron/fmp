@@ -23,7 +23,7 @@ get_header(); ?>
 
 	    <div class="row">
 	      <div class="twelve columns" style="margin-top: 5%"> <!-- use to be 25% -->
-	        <h6><button type="button" onclick="alert('get inspired')">Review a beauty product</h6>
+	        <h6><button type="button"><a href="<?php echo home_url(); ?>/write-a-review">Review a beauty product</h6>
 	      </div>
 	    </div>
 
