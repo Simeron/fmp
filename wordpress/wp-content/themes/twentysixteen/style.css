@@ -554,7 +554,7 @@ select {
   border: 1px solid #bbb; /*use to be D1D1D1*/
   border-radius: 4px;
   box-shadow: none;
-  font-size: 200%;
+  font-size: 100%;
   width: 100%;
   box-sizing: border-box; 
 }

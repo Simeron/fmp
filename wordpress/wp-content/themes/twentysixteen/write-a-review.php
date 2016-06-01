@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Write-a-review
+ * Template Name: Write a review
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen

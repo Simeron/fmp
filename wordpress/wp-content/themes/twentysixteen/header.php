@@ -28,20 +28,22 @@
 
 		<div class="row">
 	      <div class="twelve columns">
+	      	<a href="<?php echo home_url(); ?>/home">
 	        <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/retouch-reviews-logo-final.png" width="221">
+	        </a>
 	        <nav>
 	          <ul>
 	            <li><a href="#">SEARCH</a></li>
 
-	           <?php if ( is_user_logged_in() ) : ?>
+	           	<?php if ( is_user_logged_in() ) : ?>
 
-	            <li><a href="<?php echo home_url(); ?>/profile">PROFILE</a></li>
-	          <?php else: ?>
+	            	<li><a href="<?php echo home_url(); ?>/profile">PROFILE</a></li>
+	          	<?php else: ?>
 
-	            <li><a href="<?php echo home_url(); ?>/login">LOGIN</a></li>
-	            <li><a href="<?php echo home_url(); ?>/sign up">SIGN UP</a></li>
+	            	<li><a href="<?php echo home_url(); ?>/login">LOGIN</a></li>
+	            	<li><a href="<?php echo home_url(); ?>/sign up">SIGN UP</a></li>
 
-	           <?php endif; ?>
+	           	<?php endif; ?>
 
 	            <li><a href="<?php echo home_url(); ?>/product">PRODUCT</a></li>
 	            <li><a href="<?php echo home_url(); ?>">HOME</a></li>
