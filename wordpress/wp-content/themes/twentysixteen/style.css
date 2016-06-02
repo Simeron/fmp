@@ -171,7 +171,20 @@ button a:hover{
 form {
     width: 80%;
     margin: 0 auto;
-    text-align: center;
+    /*text-align: center;*/
+}
+
+form input{
+      margin-left: auto;
+    margin-right: auto;
+}
+
+.button_div{
+  margin-left: -8%;
+}
+
+#wpmem_reg{
+  width: 80%;
 }
 
 label, input {
@@ -288,6 +301,7 @@ label, input {
 .dropdown:hover .dropbtn {
     background-color: ghostwhite;
 }
+
 
 /* FOOTER */
 
