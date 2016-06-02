@@ -183,6 +183,10 @@ label, input {
   width: 100%;
 }
 
+.one-half.column.big img {
+  width: 70%;
+}
+
 .one-half.column.profile img{
   width: 50%;
   float: right;
