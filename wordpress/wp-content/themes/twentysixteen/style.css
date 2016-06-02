@@ -187,6 +187,10 @@ form input{
   width: 80%;
 }
 
+.link-text{
+  margin-top: 5%;
+}
+
 label, input {
     display: inline-block;
     font-family: 'CutiveMono-Regular';
