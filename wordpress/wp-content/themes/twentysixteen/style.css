@@ -131,6 +131,7 @@ input::-webkit-input-placeholder {
 
 /* --------- */
 
+
 .container {
   position: relative;
   width: 100%;
@@ -203,6 +204,7 @@ nav ul li
 
 p {
   text-align: left;
+  font-family: 'Arial';
 }
 
 .five.columns img{

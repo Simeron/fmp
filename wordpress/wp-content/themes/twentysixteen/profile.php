@@ -49,7 +49,11 @@ get_header(); ?>
       <div class="one-half column text" style="margin-top: 5%"> <!-- use to be 25% -->
         <h6><strong>There real mascara</strong></h6>
         <p>I just wanted to write this review about this product, which is the Benefit they're real mascara. It has a really nice wand a and the mascara itself lasts a long time, it is also quite a stubborn to take off as well, when though it's not waterproof. </p>
-    
+        <p class="fa fa-gbp"> </p><p class="fa fa-star"></p> <p class="fa fa-star"></p> <p class="fa fa-star"></p> <p class="fa fa-star-half-o"></p> |
+        <p class="fa fa-clock-o"></p> 10 - 12 hours |
+        <p class="fa fa-tint"></p> Yes
+        <p>Would you recommend this product? | Yes </p>
+
       </div>
 
       <div class="one-half column image" style="margin-top: 5%"> <!-- use to be 25% -->
@@ -61,8 +65,11 @@ get_header(); ?>
     <div class="row">
       <div class="one-half column text" style="margin-top: 5%"> <!-- use to be 25% -->
         <h6><strong>Sleek Contour Kit</strong></h6>
-        <p>I just wanted to write this review about this product, which is the Benefit they're real mascara. It has a really nice wand a and the mascara itself lasts a long time, it is also quite a stubborn to take off as well, when though it's not waterproof. </p>
-    
+        <p>Finally I have found a contour kit that works. Both of the colours work well with the colour of my face, they aren’t too light or too dark, and it gives a natural finish. I wore it at work and it only need one touch up as I was going out in the evening would defiantly buy this product again.</p>
+        <p class="fa fa-gbp"> </p><p class="fa fa-star"></p> <p class="fa fa-star"></p> <p class="fa fa-star"></p> <p class="fa fa-star"></p> <p class="fa fa-star"></p> |
+        <p class="fa fa-clock-o"></p> 22 hours |
+        <p class="fa fa-tint"></p> 
+        <p>Would you recommend this product? | Yes </p>
       </div>
 
       <div class="one-half column image" style="margin-top: 5%"> <!-- use to be 25% -->

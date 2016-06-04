@@ -47,8 +47,9 @@
 					 */
 					do_action( 'twentysixteen_credits' );
 				?>
-				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-				<a href="#">Made by Simeron</a>
+				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span> |
+				<a href="#">Made by Simeron</a> |
+				<a href="<?php echo home_url(); ?>/terms-and-conditions">T&C's</a>
 			</div><!-- .site-info -->
 		</footer><!-- .site-footer -->
 	</div><!-- .site-inner -->

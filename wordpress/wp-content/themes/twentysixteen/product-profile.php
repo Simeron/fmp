@@ -75,6 +75,10 @@ get_header(); ?>
         <?php wp_list_cats('sort_column'); ?>
     <?php the_post_thumbnail('thumbnail'); ?>
     <?php the_excerpt(); ?>
+    <span class="fa fa-gbp"> </span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star-half-o"></span> |
+        <span class="fa fa-clock-o"></span> 10 - 12 hours |
+        <span class="fa fa-tint"></span> Yes
+        <p>Would you recommend this product? | Yes </p>
 <?php endwhile; else: ?>
     <?php _e( 'Sorry, no posts matched your criteria.', 'textdomain' ); ?>
 <?php endif; ?>
@@ -96,6 +100,10 @@ get_header(); ?>
         <h6><?php the_title(); ?></h6>
     <?php the_post_thumbnail('thumbnail'); ?>
     <?php the_excerpt(); ?>
+    <span class="fa fa-gbp"> </span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star-half-o"></span> |
+        <span class="fa fa-clock-o"></span> 10 - 12 hours |
+        <span class="fa fa-tint"></span> Yes
+        <p>Would you recommend this product? | Yes </p>
 <?php endwhile; else: ?>
     <?php _e( 'Sorry, no posts matched your criteria.', 'textdomain' ); ?>
 <?php endif; ?> 

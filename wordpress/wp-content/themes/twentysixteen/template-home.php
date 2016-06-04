@@ -15,8 +15,16 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 	      <div class="twelve columns"> <!-- use to be 25% -->
-	        	<p>Search for a beauty product</p>
-	        <h6><input type="text" name="fname" style="font-size: 200%; "Placeholder="Search for a beauty product"></h6>
+
+	      	<p>Search for a beauty product</p>
+	      	<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+				<div><input type="text" size="28"; Placeholder="Search for a beauty product" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" style="font-size: 200%;"/>
+				<!-- <input type="submit" id="searchsubmit" value="Search" class="btn" /> -->
+				</div>
+			</form>
+
+	       	 
+	        <!-- <h6><input  type="text" name="fname" style="font-size: 200%; "Placeholder="Search for a beauty product"></h6> -->
 	      </div>
 	    </div>  <!-- <button type="button" onclick="alert('Hello world!')">Click Me!</button> This is where I got the button code from http://www.w3schools.com/tags/tag_button.asp -->
 
