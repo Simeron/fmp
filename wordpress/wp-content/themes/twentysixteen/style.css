@@ -287,10 +287,15 @@ form input{
 }
 
 /*-------------Search wordpress-----------*/
-
-#entry-title{
-  font-size: 18px;
+.entry-footer{
+  display: none;
 }
+
+.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{
+  width: 20%;
+  height: 20%;
+}
+
 
 .button_div{
   margin-left: -8%;
