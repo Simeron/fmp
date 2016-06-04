@@ -12,10 +12,12 @@ get_header(); ?>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+	<div class="container">
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentysixteen' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h1>
+				<h4 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentysixteen' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h4>
 			</header><!-- .page-header -->
 
 			<?php
@@ -36,7 +38,7 @@ get_header(); ?>
 			the_posts_pagination( array(
 				'prev_text'          => __( 'Previous page', 'twentysixteen' ),
 				'next_text'          => __( 'Next page', 'twentysixteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( '', 'twentysixteen' ) . ' </span>',
 			) );
 
 		// If no content, include the "No posts found" template.
@@ -46,8 +48,9 @@ get_header(); ?>
 		endif;
 		?>
 
+	</div>
+
 		</main><!-- .site-main -->
 	</section><!-- .content-area -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -40,8 +40,8 @@
 	        <nav>
 	          <ul>
 	            <li>
-	            	<form id="search">
-						<input type="search" placeholder="Search">
+	            	<form id="search"><?php get_search_form(); ?>
+						<!-- <input type="search" placeholder="Search"> -->
 					</form>
 				</li>
 

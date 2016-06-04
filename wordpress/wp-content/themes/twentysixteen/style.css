@@ -272,7 +272,7 @@ p{
 button a:hover{
   text-align: center;
   font-family: 'CutiveMono-Regular';
-  background-color: pink;
+  /*background-color: pink;*/
 }
 
 form {
@@ -284,6 +284,12 @@ form {
 form input{
       margin-left: auto;
     margin-right: auto;
+}
+
+/*-------------Search wordpress-----------*/
+
+#entry-title{
+  font-size: 18px;
 }
 
 .button_div{

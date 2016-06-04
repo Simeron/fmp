@@ -26,7 +26,7 @@ get_header(); ?>
       </div>
 
        <div class="seven columns" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Sleek Contour Kit</p>
+        <p><a href="<?php echo home_url(); ?>/product/sleek-makeup-face-contour-kit/">Sleek makeup face contour kit</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/sleek-contour-kit.jpg" width="100%">
       </div>
     </div> 
