@@ -56,40 +56,52 @@
 
 <?php wp_footer(); ?>
 
-<!--  LOAD JS SCRIPTS HERE -->
-<script>
-$(document).ready(function()
-{
+	<!--  LOAD JS SCRIPTS HERE -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-  var bgImageArray = ["lonely.jpg", "uluwatu.jpg", "carezza-lake.jpg", "batu-bolong-temple.jpg"],
-  base = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/full-",
-  secs = 4;
-  bgImageArray.forEach(function(img)
-  {
-      new Image().src = base + img; 
-      // caches images, avoiding white flash between background replacements
-  });
+	<?php 
 
-  function backgroundSequence() {
-    window.clearTimeout();
-    var k = 0;
-    for (i = 0; i < bgImageArray.length; i++) 
-    {
-      setTimeout(function()
-      { 
-        document.documentElement.style.background = "url(" + base + bgImageArray[k] + ")";        
-        if ((k + 1) === bgImageArray.length) 
-        { 
-          setTimeout(function() { backgroundSequence() }, (secs * 1000))
-        } 
-        else  k++;      
-      }, (secs * 1000) * i) 
-    }
-  }
-  backgroundSequence();
+		// echo ('is_front_page()? ' . is_front_page());
+		if (is_front_page()): 
 
-});
-</script>
+	?>
+	
+	<script>
+	$(document).ready(function()
+	{
+
+	  	var bgImageArray = ["/images/home/eyeshadow.jpg", "/images/home/lipstick.jpg", "/images/home/foundation5.jpg", "/images/home/MakeupBrushes.jpg"],
+	  		baseURL = "<?php echo get_template_directory_uri(); ?>",
+	  		secs = 4;
+
+	  	bgImageArray.forEach(function(img)
+	  	{
+	      	new Image().src = baseURL + img; 
+	      	// caches images, avoiding white flash between background replacements
+	  	});
+
+		function backgroundSequence() 
+		{
+			window.clearTimeout();
+			var k = 0;
+			for (i = 0; i < bgImageArray.length; i++) 
+			{
+			  setTimeout(function()
+			  { 
+			    document.documentElement.style.backgroundImage = "url(" + baseURL + bgImageArray[k] + ")";        
+			    if ((k + 1) === bgImageArray.length) 
+			    { 
+			      setTimeout(function() { backgroundSequence() }, (secs * 1000))
+			    } 
+			    else  k++;      
+			  }, (secs * 1000) * i) 
+			}
+		}
+		backgroundSequence();
+
+	});
+	</script>
+	<?php endif; ?>
 
 
 </body>

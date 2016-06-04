@@ -11,6 +11,7 @@
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
+
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +19,12 @@
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
+
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/font-awesome/css/font-awesome.min.css">
+
 	<?php wp_head(); ?>
+
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -33,7 +39,13 @@
 	        </a>
 	        <nav>
 	          <ul>
-	            <li><a href="#">SEARCH</a></li>
+	            <li>
+	            	<form id="search">
+						<input type="search" placeholder="Search">
+					</form>
+				</li>
+
+				<li><a href="<?php echo home_url(); ?>/product">PRODUCT</a></li>
 
 	           	<?php if ( is_user_logged_in() ) : ?>
 
@@ -45,8 +57,8 @@
 
 	           	<?php endif; ?>
 
-	            <li><a href="<?php echo home_url(); ?>/product">PRODUCT</a></li>
-	            <li><a href="<?php echo home_url(); ?>">HOME</a></li>
+	            
+	            <!-- <li><a href="<?php echo home_url(); ?>">HOME</a></li> -->
 	          </ul>
 	        </nav>
 	      </div>

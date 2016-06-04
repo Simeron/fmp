@@ -23,12 +23,12 @@ get_header(); ?>
     
     <div class="row">
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Barrym gel liner</p>
+        <p><a href="<?php echo home_url(); ?>/product/barry-m-waterproof-gel-eyeliner-collection/">Barry M  Waterproof Gel Eyeliner collection</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/eyes/barrym-gel-liner.jpg">
       </div>
 
        <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Bobbi Brown ink liner</p>
+        <p><a href="<?php echo home_url(); ?>/product/bobbi-brown-ink-liner/">Bobbi Brown Ink Liner</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/eyes/bobbi-brown-ink-liner.jpg">
       </div>
     </div> 
@@ -36,12 +36,12 @@ get_header(); ?>
 
     <div class="row">
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Urban Decay Naked3 Eyeshadow Palette</p>
+        <p><a href="<?php echo home_url(); ?>/product/urban-decay-naked3-eyeshadow-palette/">Urban Decay Naked3 Eyeshadow Palette</a></p>
        <img src="<?php echo get_template_directory_uri(); ?>/images/eyes/Naked3-Eyeshadow-Palette.jpg">
       </div>
 
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>NYX eye primer</p>
+        <p><a href="<?php echo home_url(); ?>/product/bobbi-brown-ink-liner/">Bobbi Brown Ink Liner</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/eyes/nyx-eye-primer.jpg">
       </div>
     </div> 
@@ -49,12 +49,12 @@ get_header(); ?>
 
     <div class="row">
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Revlon PhotoReady Eye Primer Brightner</p>
+         <p><a href="<?php echo home_url(); ?>/product/revlon-photoready-eye-primer-prime/">Revlon PhotoReady™ Eye Primer + Prime</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/eyes/revlon-PhotoReady_Eye_Primer_Brightner.png">
       </div>
 
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Urban Decay eye primer</p>
+         <p><a href="<?php echo home_url(); ?>/product/urban-decay-eyeshadow-primer-potion/">Urban Decay EYESHADOW PRIMER POTION/a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/eyes/urban-decay-eye-primer.jpg">
       </div>
     </div> 

@@ -23,12 +23,12 @@ get_header(); ?>
     
     <div class="row">
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Maybelline push up mascara</p>
+        <p><a href="<?php echo home_url(); ?>/product/maybelline-push-up-drama-mascara-very-black/">Maybelline Push Up Drama Mascara Very Black</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/maybelline-push-up.jpg">
       </div>
 
        <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>chanel big mascara</p>
+        <p><a href="<?php echo home_url(); ?>/product/chanel-big-mascara/">Chanel Big Mascara</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/mascaras/chanel-big.jpg">
       </div>
     </div> 
@@ -36,12 +36,12 @@ get_header(); ?>
 
     <div class="row">
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Benefit there real mascara</p>
+        <p><a href="<?php echo home_url(); ?>/product/benefit-theyre-real-mascara/">Benefit They're Real Mascara</a></p>
        <img src="<?php echo get_template_directory_uri(); ?>/images/mascaras/benefit-there-real.jpg">
       </div>
 
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>L'Oreal Paris Volume Million Lashes</p>
+        <p><a href="<?php echo home_url(); ?>/product/loreal-paris-volume-million-lashes-feline-mascara/">LOreal Paris Volume Million Lashes Feline Mascara</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/mascaras/L_Oreal_Paris_Volume_Million_Lashes.jpg">
       </div>
     </div> 
@@ -49,12 +49,12 @@ get_header(); ?>
 
     <div class="row">
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Clinique mascara</p>
+        <p><a href="<?php echo home_url(); ?>/product/clinique-high-impact-mascara/">Clinique High Impact Mascara</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/mascaras/clinique-mascara.jpg">
       </div>
 
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Charlotte Tilbury mascara</p>
+        <p><a href="<?php echo home_url(); ?>/product/charlotte-tilbury-full-fat-lashes-mascara-glossy-black/">Charlotte Tilbury Full Fat Lashes Mascara, Glossy Black</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/mascaras/charlotte-tilbury.jpg">
       </div>
     </div> 

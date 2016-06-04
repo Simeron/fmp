@@ -23,12 +23,12 @@ get_header(); ?>
     
     <div class="row">
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Bobbi Brown corrector</p>
+        <p><a href="<?php echo home_url(); ?>/product/bobbi-brown-creamy-corrector/">Bobbi Brown Creamy Corrector</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/correctors/bobbi-brown-corrector.jpg">
       </div>
 
        <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Mac Highlighter</p>
+        <p><a href="<?php echo home_url(); ?>/product/m·a·c-prep-prime-highlighter/">M·A·C Prep & Prime Highlighter</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/correctors/mac-Highlighter.jpg">
       </div>
     </div> 
@@ -36,12 +36,12 @@ get_header(); ?>
 
     <div class="row">
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Maxfactor corrector</p>
+        <p><a href="<?php echo home_url(); ?>/product/maxfactor-correctors/">Maxfactor Correctors</a></p>
        <img src="<?php echo get_template_directory_uri(); ?>/images/correctors/max-factor-corrector.jpg">
       </div>
 
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Maybelline Eraser Eye Concealer</p>
+        <p><a href="<?php echo home_url(); ?>/product/maybelline-eraser-eye-concealer/">Maybelline Eraser Eye Concealer</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/correctors/Maybelline_Eraser_Eye_Concealer.jpg">
       </div>
     </div> 
@@ -49,12 +49,12 @@ get_header(); ?>
 
     <div class="row">
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>NYX colour corrector</p>
+        <p><a href="<?php echo home_url(); ?>/product/nyx-3c-palette-conceal-correct-contour/">NYX 3c palette conceal correct contour</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/correctors/nyx-colour-corrector.jpg">
       </div>
 
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Smashbox purple corrector</p>
+        <p><a href="<?php echo home_url(); ?>/product/smashbox-colour-corrector-primer/">Smashbox Colour Corrector Primer</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/correctors/smashbox-purple-corrector.jpg">
       </div>
     </div> 

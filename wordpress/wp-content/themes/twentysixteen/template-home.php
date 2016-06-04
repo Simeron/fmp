@@ -10,12 +10,11 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main" style="margin-top: 7%;">
+	<main id="main" class="site-main" role="main" style="margin-top: 4%;">
 
 	<div class="container">
 		<div class="row">
 	      <div class="twelve columns"> <!-- use to be 25% -->
-	        <form action="demo_form.asp">
 	        	<p>Search for a beauty product</p>
 	        <h6><input type="text" name="fname" style="font-size: 200%; "Placeholder="Search for a beauty product"></h6>
 	      </div>
@@ -23,7 +22,7 @@ get_header(); ?>
 
 	    <div class="row">
 	      <div class="twelve columns" style="margin-top: 5%"> <!-- use to be 25% -->
-	        <h6><button type="button"><a href="<?php echo home_url(); ?>/write a review">Review a beauty product</h6>
+	        <h6><button type="button"><a href="<?php echo home_url(); ?>/write-a-review">Review a beauty product</h6>
 	      </div>
 	    </div>
 

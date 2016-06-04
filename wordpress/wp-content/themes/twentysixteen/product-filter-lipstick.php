@@ -23,12 +23,12 @@ get_header(); ?>
     
     <div class="row">
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Rimmell lipstick</p>
+        <p><a href="<?php echo home_url(); ?>/product/rimmel-lasting-finish-lipstick/">Rimmel Lasting Finish Lipstick</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/rimmell-lipstick.jpg">
       </div>
 
        <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Bobbi Brown matte lipstick</p>
+        <p><a href="<?php echo home_url(); ?>/product/bobbi-brown-creamy-matte-lip-color/">Bobbi Brown Creamy Matte Lip Color</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/lipstick/bobbi-brown-matte-lipstick.jpg">
       </div>
     </div> 
@@ -36,12 +36,12 @@ get_header(); ?>
 
     <div class="row">
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Burberry velvet</p>
+        <p><a href="<?php echo home_url(); ?>/product/burberry-lip-velvet-military/">Burberry LIP VELVET MILITARY</a></p>
        <img src="<?php echo get_template_directory_uri(); ?>/images/lipstick/burberry-velvet.jpg">
       </div>
 
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Maxfactor flipsticker</p>
+        <p><a href="<?php echo home_url(); ?>/product/max-factor-colour-effect-flipstick/">Max Factor Colour Effect Flipstick</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/lipstick/max-factor-flipstick.jpg">
       </div>
     </div> 
@@ -49,12 +49,12 @@ get_header(); ?>
 
     <div class="row">
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Shiseido rouge lipstick</p>
+        <p><a href="<?php echo home_url(); ?>/product/shiseido-lacquer-rouge-lipstick-sunburn/">Shiseido Lacquer Rouge Lipstick, Sunburn</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/lipstick/shiseido-rouge.jpg">
       </div>
 
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Topshop lipstick</p>
+        <p><a href="<?php echo home_url(); ?>/product/topshop-lipstick/">Topshop lipstick</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/lipstick/topshop-lipstick.jpg">
       </div>
     </div> 

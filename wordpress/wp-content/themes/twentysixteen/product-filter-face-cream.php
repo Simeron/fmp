@@ -23,12 +23,12 @@ get_header(); ?>
     
     <div class="row">
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Clinque face cream</p>
+        <p><a href="<?php echo home_url(); ?>/product/clinique-moisture-surge-intense-skin-fortifying-hydrator/">Clinique Moisture Surge Intense Skin Fortifying Hydrator</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/face-cream/clinque-face-cream.jpg">
       </div>
 
        <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Charlotte Tilbury magic cream</p>
+        <p><a href="<?php echo home_url(); ?>/product/charlotte-tilbury-magic-cream/">Charlotte Tilbury Magic Cream</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/face-cream/ct-magic-cream.jpg">
       </div>
     </div> 
@@ -36,12 +36,12 @@ get_header(); ?>
 
     <div class="row">
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Elizabeth Arden 8 hours night cream</p>
+        <p><a href="<?php echo home_url(); ?>/product/elizabeth-arden-8-hours-night-cream/">Elizabeth Arden 8 hours Night Cream</a></p>
        <img src="<?php echo get_template_directory_uri(); ?>/images/face-cream/ea-8-hours-night-cream.jpg">
       </div>
 
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Lancome face cream</p>
+        <p><a href="<?php echo home_url(); ?>/product/lancome-face-cream/">Lancome face cream</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/face-cream/lancome-face-cream.jpg">
       </div>
     </div> 
@@ -49,12 +49,12 @@ get_header(); ?>
 
     <div class="row">
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Laroche-Posay face cream</p>
+        <p><a href="<?php echo home_url(); ?>/product/la-roche-posay-effaclar-duo/">La-Roche Posay Effaclar Duo</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/face-cream/lp-face-cream.jpg">
       </div>
 
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Olay face cream</p>
+         <p><a href="<?php echo home_url(); ?>/product/olay-regenerist-daily-3-point-treatment-cream-moisturiser/">Olay Regenerist Daily 3 Point Treatment Cream Moisturiser</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/face-cream/olay.jpg">
       </div>
     </div> 

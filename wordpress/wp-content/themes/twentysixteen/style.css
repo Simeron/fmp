@@ -33,6 +33,104 @@ Use it to make something cool, have fun, and share what you've learned with othe
    src: url(Raleway-ExtraLight.otf);
 }
 
+/* HIDE WP MENU BAR*/
+
+#wpadminbar
+{
+  display: none;
+}
+/* --------- */
+
+/* HOME BACKGROUNDS */
+
+html
+{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: 0.5s background-image;
+}
+
+/* --------- */
+
+/* SEARCH */
+
+input {
+  outline: none;
+}
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none; 
+}
+
+
+input[type=search] {
+  background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 55px;
+  
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+input[type=search]:focus {
+  width: 130px;
+  background-color: #fff;
+  border-color: #66CC75;
+  
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+  color: #999;
+}
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+
+#search input[type=search] {
+  width: 32px;
+  padding-left: 10px;
+  color: transparent;
+  cursor: pointer;
+      border-color: transparent;
+    background-color: transparent;
+}
+#search input[type=search]:hover {
+  background-color: #fff;
+}
+#search input[type=search]:focus {
+  width: 200px;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+  border-color: #5fe3d4;
+}
+#search input:-moz-placeholder {
+  color: transparent;
+}
+#search input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/* --------- */
+
 .container {
   position: relative;
   width: 100%;
@@ -71,14 +169,23 @@ Use it to make something cool, have fun, and share what you've learned with othe
   margin-left: 10px;
 }
 
-.twelve.columns nav ul li{
-  text-align: center;
+nav ul
+{
+  float: right; 
+  margin-right: 2em;
+}
+
+nav ul li
+{
+  text-align: right;
   display: inline-block;
-  width:100px; /* fixed width */
+  /*width:100px;*/ /* fixed width */
   font-family: 'Raleway-Light';
   background-color; ghostwhite;
   text-decoration: none;
-  float: right; 
+  /*float: right; */
+  float: left;
+  margin-left: 2em;
 }
 
 .two.columns img{

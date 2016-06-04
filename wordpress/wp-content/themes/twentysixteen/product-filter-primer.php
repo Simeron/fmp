@@ -23,12 +23,12 @@ get_header(); ?>
     
     <div class="row">
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Chanel primer</p>
+        <p><a href="<?php echo home_url(); ?>/product/chanel-primer/">Chanel Primer</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/primer/chanel-primer.jpg">
       </div>
 
        <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Laura Mercier primer</p>
+         <p><a href="<?php echo home_url(); ?>/product/laura-mercier-primer/">Laura Mercier Primer</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/primer/laura-mercier.jpg">
       </div>
     </div> 
@@ -36,12 +36,12 @@ get_header(); ?>
 
     <div class="row">
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Urban decay primer</p>
+        <p><a href="<?php echo home_url(); ?>/product/urban-decay-eyeshadow-primer-potion/">Urban Decay EYESHADOW PRIMER POTION</a></p>
        <img src="<?php echo get_template_directory_uri(); ?>/images/primer/urban-decay-primer.jpg">
       </div>
 
       <div class="one-half column " style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>YSL primer</p>
+        <p><a href="<?php echo home_url(); ?>/product/ysl-touche-eclat-blur-perfector/">YSL TOUCHE ÉCLAT BLUR PERFECTOR</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/primer/ysl-primer.jpg">
       </div>
     </div> 
@@ -49,12 +49,12 @@ get_header(); ?>
 
     <div class="row">
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Smashbox primer</p>
+        <p><a href="<?php echo home_url(); ?>/product/smashbox-photo-finish-foundation-primer/">Smashbox Photo Finish Foundation Primer</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/primer/smashbox-primer.jpg">
       </div>
 
       <div class="one-half column big" style="margin-top: 5%"> <!-- use to be 25% -->
-        <p>Mac primer</p>
+         <p><a href="<?php echo home_url(); ?>/product/mac-prep-and-primer/">Mac Prep and Primer</a></p>
         <img src="<?php echo get_template_directory_uri(); ?>/images/primer/mac-primer.jpg">
       </div>
     </div> 

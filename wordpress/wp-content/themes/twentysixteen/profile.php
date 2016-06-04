@@ -72,6 +72,8 @@ get_header(); ?>
 
     <br>
 
+    <a href="<?php echo home_url(); ?>/?a=logout" class="btn logout">Log out</a>
+
     <?php else: ?>
 
     <p>You need to be logged in to view this page.</p>

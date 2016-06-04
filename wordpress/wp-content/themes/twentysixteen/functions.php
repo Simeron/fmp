@@ -419,3 +419,16 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+
+
+
+// WP-Members login redirect
+
+function my_login_redirect( $redirect_to, $user_id ) {
+	// return the url that the login should redirect to
+	return home_url() . '/profile';
+}
+
+add_filter( 'wpmem_login_redirect', 'my_login_redirect', 10, 2 );
+
+

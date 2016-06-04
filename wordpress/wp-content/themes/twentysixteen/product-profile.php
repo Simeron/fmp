@@ -36,7 +36,10 @@ get_header(); ?>
       </div>
     </div> 
 
+
     <?php endwhile; ?>
+
+    
 
     <hr>
 
@@ -54,7 +57,8 @@ get_header(); ?>
 
     </div> 
 
-    <!-- create a WP Query that pulls in review posts that are related to this  -->
+    
+
 
     <!-- <div class="row"> -->
       <!-- <div class="two columns" style="margin-top: 5%"> <!-- use to be 25% -->
