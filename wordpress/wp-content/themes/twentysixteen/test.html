@@ -1,0 +1,45 @@
+<!-- create a WP Query that pulls in review posts that are related to this  -->
+
+    <?php
+
+      // WP_Query arguments
+      $args = array (
+        'category_name'          => 'reviews',
+        'meta_query'             => array(
+          array(
+            'key'       => 'which_product',
+            'value'     => get_the_ID (),
+            'compare'   => '=',
+          ),
+        ),
+      );
+
+
+      // echo('<pre>');
+      // print_r($query);
+      // echo('</pre>');
+
+
+    ?>
+
+
+
+<?php
+      // The Query
+      $query = new WP_Query( $args );
+
+      // The Loop
+      if ( $the_query->have_posts() ) 
+      {
+        echo '<ul>';
+        while ( $the_query->have_posts() ) {
+          $the_query->the_post();
+          echo '<li>' . get_the_title() . '</li>';
+        }
+        echo '</ul>';
+      } 
+
+      /* Restore original Post Data */
+      wp_reset_postdata();
+
+    ?>
